@@ -1,0 +1,25 @@
+{
+  "root": true,
+  "env": {
+    "browser": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "extends": ["eslint:recommended","plugin:react/recommended","prettier"],
+  "rules": {
+    "one-var": "off",
+    "jsx-quotes": [2, "prefer-single"],
+    "semi": ["error", "never"],
+    "quotes": [2, "single"],
+    "indent": ["error", 2],
+    "react/react-in-jsx-scope": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
